@@ -18,6 +18,7 @@ const UseMemoExample = () => {
     const sortFunc = useCallback((a, b) => a.localeCompare(b) * -1, [])
 
     return (<>
+        <h4>UseMemo Example</h4>
         <div>Result: {result}</div>
         <div>Unsorted Name: {names.join(', ')}</div>
         Sorted Name: <SortedList list={names} sortFunc={sortFunc}/>

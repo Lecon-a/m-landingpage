@@ -27,6 +27,7 @@ const UseEffectExample = () => {
     const namesButtons = names.map(name => <button key={name} onClick={handleClick}>{name}</button>)
 
     return (<>
+        <h4>UseEffect Example</h4>
         {namesButtons}
         {selectedNameDetails && <div>Details: {JSON.stringify(selectedNameDetails)}</div>}
     </>) 

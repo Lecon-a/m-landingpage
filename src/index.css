@@ -3,11 +3,15 @@
   padding: 0;
 }
 
+ul, li {
+  list-style: none;
+}
+
 .topLevelContainer {
   display: flex;
   flex-direction: row;
-  padding: 3rem;
-  gap: 32px;
+  padding: 1rem;
+  gap: 16px;
 }
 
 .container {
@@ -15,7 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .error {
@@ -23,4 +27,31 @@
   color: #e9dcdc;
   border: 2px solid rgb(206, 7, 7);
   background-color: rgb(219, 48, 48);
+}
+
+.searchBar {
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.pokemonDetailsWrapper {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid rgb(210, 209, 209);
+  background-color: rgb(210, 209, 209);
+  box-shadow: 4px 4px 8px rgb(194, 192, 192);
+  margin-block: 8px;
+  border-radius: 5px;
+}
+
+.roundedImage {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid rgb(210, 209, 209);
+  background-color: rgb(210, 209, 209);
+  box-shadow: 2px 2px 8px rgb(189, 187, 187);
 }
